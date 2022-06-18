@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+header{
+  background-color: #f9f9f9;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+  color: #2d3950;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.navbar-expand-lg .navbar-nav .nav-link:hover{
+  color: #fa3715;
+}
+.banner{
+  background-image: url(../img/banner.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 90vh;
+  text-align: center;
+  position: relative;
+}
+.banner h1{
+  color: #f9f9f9;
+  text-transform: uppercase;
+  font-size: 80px;
+}
+.banner span{
+  display: block;
+  height: 1px;
+  width: 100%;
+  background: #FF0015;
+  margin: auto;
+  margin-bottom: 20px;
+
+}
+.banner p{
+  color: #ffffff;
+}
+.btn-custom{
+  color: #f9f9f9;
+  border: 1px solid #FF0015;
+  background-color: #ff001580;
+  padding: 0;
+  padding: 8px 20px;
+  margin-top: 30px;
+  text-transform: uppercase;
+}
+.btn-custom:hover{
+  color: #f9f9f9;
+  background-color:#690202;
+}
+.btn-custom:focus{
+  box-shadow: none;
+}
+.height{
+  min-height: 90vh;
+  align-items: center;
+}
+.icon{
+  position: absolute;
+  left: 50%;
+  bottom: 100px;
+  transform: translateX(-50%);
+  color: rgb(255, 0, 0);
+  font-size: 20px;
+
+  animation: up-down 2s infinite;
+  animation-direction: alternate;
+}
+@keyframes up-down {
+  0% {
+      top: 88%;
+
+  }
+  100% {
+      top: 82%;
+
+  }
+}
+
+.simple_section{
+  background-color: #f9f9f9;
+  text-align: center;
+}
+.simple_section h2{
+  color: #2d3950;
+  font-size: 34px;
+}
+.simple_section p{
+  color: #999999;
+  padding-top: 15px;
+  font-size: 18px;
+
+}
+.feature{
+
+}
+.feature_icon{
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  font-size: 35px;
+  line-height: 90px;
+  margin: auto;
+  background: #ff0000;
+  text-align: center;
+  /* Old browsers */
+  background: -moz-linear-gradient(left, #ff0000 0%, #ff0000 49%, #ff0000 50%, #690202 50%, #690202 100%);
+  /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, #ff0000 0%, #ff0000 49%, #ff0000 50%, #690202 50%, #690202 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, #ff0000 0%, #ff0000 49%, #ff0000 50%, #690202 50%, #690202 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0000', endColorstr='#690202', GradientType=1);
+}
+.feature h3{
+  color: #2d3950;
+  font-size: 18px;
+  padding-bottom: 10px;
+  padding-top: 17px;
+}
+.feature p{
+  color: #999;
+  font-size: 17px;
+}
+.showcase{
+  background-color: #f9f9f9;
+}
+.showcasetext h3 {
+  margin-top: 60px;
+  color: #2d3950;
+}
+
+.showcasetext p {
+  font-size: 15px;
+  color: #999;
+  padding-bottom: 40px;
+}
+.gallery_item {
+  position: relative;
+}
+
+.gallery_item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 0;
+  background-color: #f37070;
+  opacity: 0;
+  transition: .5s all ease-in-out;
+}
+
+.gallery_item:hover::before {
+  width: 50%;
+  height: 100%;
+  opacity: .5;
+}
+
+.gallery_item::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  background-color: #fa3715;
+  opacity: 0;
+  transition: .5s all ease-in-out;
+}
+
+.gallery_item:hover::after {
+  width: 50%;
+  height: 100%;
+  opacity: .5;
+}
+
+
+.gallery-icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  text-align: center;
+  z-index: 9999;
+  transition: all 0.5s ease-in-out 0s;
+  opacity: 0;
+}
+
+.gallery_item:hover .gallery-icon {
+  opacity: 1;
+}
+
+.gallery-icon ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+.gallery-icon ul li i {
+  border: 1px solid rgb(255, 255, 255);
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+}
+
+.showimages:hover .gallery-icon {
+  opacity: 1;
+}
+
+.contact {
+  background-image: url(../img/baneer2.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  margin-top: 50px;
+  position: relative;
+  z-index: 111;
+}
+
+.contact-text{
+  z-index: 0;
+}
+.contact-text h2 {
+  padding-top: 66px;
+  color: #fff;
+}
+
+.contact-text p {
+  color: #999;
+}
+
+.contact::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #191616cb;
+  opacity: .9;
+  z-index: -1;
+}
+
+.contactform{
+}
+
+.contactform form{
+  margin-top: 30px;
+}
+
+.contactform form input{
+  width: 100%;
+  margin: 10px 0px;
+  padding: 9px;
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 1, 1);
+  color: #fff;
+  outline: none;
+  
+}
+.contactform form textarea{
+  width: 100%;
+  height: 180px;
+  margin: 10px 0px;
+  padding: 17px;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+  border: 1px solid rgb(255, 1, 1);
+  color: #fff;
+  outline: none;
+}
+.contactform form input::placeholder{
+  color: #999;
+}
+
+.contactform form textarea::placeholder{
+  color: #999;
+}
+
+.checkandsend{
+display: flex;
+justify-content: space-between;
+}
+
+.checkbox{
+display: flex;
+align-items: center;
+}
+.checkbox input{
+  width: 28px !important;
+  
+}
+.checkbox p{
+  padding-top: 14px;
+  color: #fff;
+}
+
+.send{
+width: 120px;
+height: 10px;
+}
+
+.send input{
+  padding: 12px !important;
+  border: none !important;
+  border: 1px solid #FF0015 !important;
+  background-color: #ff001580;
+  transition: .5s all ease-in-out;
+  cursor: pointer;
+  font-size: 18px;
+  color: #fff !important;
+}
+
+.send input:hover{
+  background-color: #690202;
+}
+.mainfooter{  
+display: flex; 
+justify-content: space-between; 
+align-items: center;
+margin-top: 20px;
+}
+.copyright{
+
+}
+.copyright p{
+  color: #999;
+  font-size: 15px;
+  font-weight: 600;
+}
+.copyright p a{
+  text-decoration: none;
+  color: #fa3715;
+}
+.social{
+
+}
+.social ul{
+list-style: none;
+display: flex;
+}
+.social ul li{
+border: 1px solid #690202;
+padding: 8px 13px;
+margin-left: 7px;
+border-radius: 3px;
+background-color: #690202;
+color: #fff;
+}
+.social ul li:hover{
+  background-color: #fff;
+  color: #690202;
+}
